@@ -7,7 +7,9 @@ import os
 import toml
 import openai
 
-import openai
+headers={
+    "authorization":st.secrets["auth_token"]
+}
 
 def get_openai_api_key():
     # Check Streamlit secrets first
